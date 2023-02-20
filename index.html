@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <style>
+        .container {
+            width: 20rem;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Nhập Thông Tin</h1>
+        <form class="input">
+            <div class="title">
+                Họ và Tên:<br>
+                Email:<br>
+                Số điện thoại:<br>
+                Quê quán:<br>
+                Giới tính:<br>
+
+            </div>
+            <div class="input">
+                <input type="text" placeholder="vui lòng nhập tên" id="name"><br>
+                <input type="text" placeholder="vui lòng nhập email" id="mail"><br>
+                <input type="tel" placeholder="vui lòng nhập số điện thoại" id="tel"><br>
+                <input type="text" placeholder="vui lòng nhập địa chỉ quê quán" id="addr"><br>
+                <input type="radio" name="gender" id="" value="Nam">Nam <input type="radio" name="gender" id="" value="Nữ"> Nữ<br>
+            </div>
+
+        </form>
+         <input type="button" value="Lưu lại" id="btnCreate"><br>
+         <hr>
+
+        <table class="table" border="1">
+            <thead>Danh sách sinh viên</thead><br>
+            <th border="1">
+                <tbody id="tableBody">
+                    <tr>
+                        <th>No.</th>
+                        <th>Họ và Tên</th>
+                        <th>Email</th>
+                        <th>Điện thoại</th>
+                        <th>Giới tính</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>
+                            <button onclick="update()">Edit</button>
+                            <button onclick="deleted()">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </th>
+        </table>
+    </div>
+    <script>
+        
+    </script>
+</body>
+
+</html>
